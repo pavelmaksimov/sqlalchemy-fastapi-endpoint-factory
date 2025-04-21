@@ -1,0 +1,33 @@
+[project]
+name = "sqlalchemy-fastapi-endpoint-factory"
+version = "1.0.0"
+description = "Auto generate FastAPI endpoint by SqlAlchemy model for data access"
+readme = "README.md"
+authors = [
+    { name = "Pavel Maksimov", email = "vur21@yandex.ru" }
+]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = []
+[dependency-groups]
+dev = [
+    "fastapi>=0.115.12",
+    "httpx>=0.28.1",
+    "pytest>=8.3.5",
+    "pytest-cov>=6.1.1",
+    "sqlalchemy>=2.0.40",
+    "uvicorn>=0.34.1",
+    "aiosqlite>=0.21.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/pavelmaksimov/data-endpoint-factory"
+"Bug Tracker" = "https://github.com/pavelmaksimov/data-endpoint-factory/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"

@@ -1,4 +1,26 @@
+# Sqlalchemy Fastapi Endpoint Factory
+
+Auto generate FastAPI endpoint by SqlAlchemy model for data access
+
+## Installation
+```bash
+pip install sqlalchemy-fastapi-endpoint-factory
+```
+Or
+```bash
+uv add --dev sqlalchemy-fastapi-endpoint-factory
+```
+
+## Example
+
+Install an example for a quick launch.
+
+```bash
+uv add fastapi sqlalchemy uvicorn
+```
+
 ```python
+# main.py
 from fastapi import FastAPI
 from sqlalchemy import Integer, Column, String, insert
 
@@ -51,3 +73,17 @@ app.add_api_route(
     methods=["POST"],
 )
 ```
+
+```bash
+uvicorn main:app
+```
+
+Visit page in browser:
+
+http://localhost:8000/docs
+
+http://localhost:8000/redoc
+
+![img.png](img.png)
+
+![img.png](img2.png)

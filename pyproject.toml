@@ -1,6 +1,6 @@
 [project]
 name = "sqlalchemy-fastapi-endpoint-factory"
-version = "1.0.0"
+version = "1.0.1"
 description = "Auto generate FastAPI endpoint by SqlAlchemy model for data access"
 readme = "README.md"
 authors = [

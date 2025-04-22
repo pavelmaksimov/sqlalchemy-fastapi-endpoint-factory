@@ -31,7 +31,7 @@ class SqlAlchemyEndpointBuilder:
     class FilterModel(BaseModel):
         field: enum.Enum = Field(description="Имя поля модели")
         operator: "SqlAlchemyEndpointBuilder.Operator"
-        value: str | int | float | list | bool
+        value: Any
 
     class BodyModel(BaseModel):
         filters: Optional[List["SqlAlchemyEndpointBuilder.FilterModel"]] = None
